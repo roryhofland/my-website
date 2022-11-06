@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import MainHeader from './components/MainHeader.vue'
+import { RouterLink, RouterView } from "vue-router";
+import MainHeader from "./components/MainHeader.vue";
 </script>
 
 <template>
@@ -9,36 +9,61 @@ import MainHeader from './components/MainHeader.vue'
       <MainHeader />
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/skills">Skills & Projects</RouterLink>
+        <RouterLink to="/about">About Me</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
   </header>
 
   <div class="router-wrapper">
-    <RouterView />
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
+
+  <footer>lol</footer>
 </template>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
-  width: 100%
+  width: 100%;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  border: 1px white solid;
+  width: 100%;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
 }
 
 nav {
+  color: var(--color-text);
   width: 100%;
   font-size: 12px;
   text-align: center;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: hsla(160, 100%, 37%, 1);
 }
 
 nav a.router-link-exact-active:hover {
@@ -56,7 +81,6 @@ nav a:first-of-type {
 }
 
 .router-wrapper {
-  
 }
 
 @media (min-width: 1024px) {
