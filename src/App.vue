@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import MainHeader from "./components/MainHeader.vue";
+import MainFooter from "./components/MainFooter.vue";
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import MainHeader from "./components/MainHeader.vue";
       <MainHeader />
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/skills">Skills & Projects</RouterLink>
+        <RouterLink to="/skills">Projects</RouterLink>
         <RouterLink to="/about">About Me</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
@@ -17,14 +18,16 @@ import MainHeader from "./components/MainHeader.vue";
   </header>
 
   <div class="router-wrapper">
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
+    <RouterView v-slot="{ Component }">
+      <Transition name="fade" mode="out-in">
         <component :is="Component" />
-      </transition>
-    </router-view>
+      </Transition>
+    </RouterView>
   </div>
 
-  <footer>lol</footer>
+  <footer>
+    <MainFooter />
+  </footer>
 </template>
 
 <style scoped>
@@ -41,13 +44,6 @@ import MainHeader from "./components/MainHeader.vue";
 header {
   line-height: 1.5;
   max-height: 100vh;
-  width: 100%;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  border: 1px white solid;
   width: 100%;
 }
 .logo {
@@ -74,12 +70,16 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  color: var(--color-text);
 }
 
 nav a:first-of-type {
   border: 0;
 }
 
+h3 {
+  color: white;
+}
 .router-wrapper {
 }
 

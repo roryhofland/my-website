@@ -1,0 +1,34 @@
+<template>
+  <div class="item">
+    <div class="details">
+      <h3>Contact</h3>
+      <p><strong>Email: </strong>roryhofland@gmail.com</p>
+      <p>
+        <strong>Linkedin: </strong>
+        <a href="www.linkedin.com/in/roryhofland"
+          >www.linkedin.com/in/roryhofland</a
+        >
+      </p>
+      <p>
+        <strong>Github: </strong
+        ><a href="https://github.com/roryhofland/roryhofland.github.io"
+          >roryhofland.github.io</a
+        >
+      </p>
+    </div>
+  </div>
+</template>
+
+<style>
+p {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .item {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
