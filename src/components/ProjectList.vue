@@ -6,7 +6,12 @@ import ProjectItem from "../components/ProjectItem.vue";
   <div class="list-wrapper">
     <ProjectItem>
       <template #icon>
-        <img class="thumbnail" src="../assets/images/boardgame.PNG" alt="" />
+        <a
+          class="proj-img"
+          target="_blank"
+          href="https://github.com/ramp4-pcar4/ramp4-pcar4"
+          ><img class="thumbnail" src="../assets/images/ramp.svg" alt=""
+        /></a>
       </template>
       <template #heading>
         <a
@@ -107,5 +112,9 @@ img {
 
 .proj-title {
   color: white;
+}
+
+.proj-img:hover {
+  filter: none;
 }
 </style>
