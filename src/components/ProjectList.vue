@@ -35,7 +35,12 @@ import ProjectItem from "../components/ProjectItem.vue";
     </ProjectItem>
     <ProjectItem>
       <template #icon>
-        <i class="fa fa-home"></i>
+        <a
+          class="proj-img"
+          target="_blank"
+          href="https://github.com/ramp4-pcar4/ramp4-pcar4"
+          ><img class="thumbnail" src="../assets/images/boardgame.PNG" alt=""
+        /></a>
       </template>
       <template #heading>
         <a
@@ -56,10 +61,26 @@ import ProjectItem from "../components/ProjectItem.vue";
     </ProjectItem>
     <ProjectItem>
       <template #icon>
-        <i class="fa fa-home"></i>
+        <a
+          class="proj-img"
+          target="_blank"
+          href="https://github.com/ramp4-pcar4/ramp4-pcar4"
+          ><img class="thumbnail" src="../assets/images/atm.svg" alt=""
+        /></a>
       </template>
-      <template #heading>ATM</template>
-      <template #description> Application Tracking Manager </template>
+      <template #heading>
+        <a
+          class="proj-title"
+          target="_blank"
+          href="https://github.com/ATM-GSA/ATM"
+          >Application Tracking Manager</a
+        ></template
+      >
+      <template #description>
+        A centralized and authoritative resource for managing information about
+        the Environment and Climate Change Canada Reusable Applications Division
+        software applications.
+      </template>
       <template #stack>
         <img src="../assets/icons/icons8-c-sharp-logo.svg" alt="csharp" />
         <img
@@ -71,7 +92,12 @@ import ProjectItem from "../components/ProjectItem.vue";
     </ProjectItem>
     <ProjectItem>
       <template #icon>
-        <i class="fa fa-home"></i>
+        <a
+          class="proj-img"
+          target="_blank"
+          href="https://github.com/roryhofland/personal-website"
+          ><img class="thumbnail" src="../assets/images/github.svg" alt=""
+        /></a>
       </template>
       <template #heading>
         <a
@@ -93,6 +119,11 @@ import ProjectItem from "../components/ProjectItem.vue";
 </template>
 
 <style>
+i {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   width: 24px;
   padding: 0 2px;
@@ -100,8 +131,9 @@ img {
 }
 
 .thumbnail {
-  width: 150%;
+  width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .list-wrapper {

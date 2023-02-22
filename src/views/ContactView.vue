@@ -5,14 +5,14 @@
       <p><strong>Email: </strong>roryhofland@gmail.com</p>
       <p>
         <strong>Linkedin: </strong>
-        <a href="www.linkedin.com/in/roryhofland"
-          >www.linkedin.com/in/roryhofland</a
+        <a href="www.linkedin.com/in/roryhofland" target="_blank"
+          >linkedin.com/in/roryhofland</a
         >
       </p>
       <p>
         <strong>Github: </strong
-        ><a href="https://github.com/roryhofland/roryhofland.github.io"
-          >roryhofland.github.io</a
+        ><a href="https://github.com/roryhofland" target="_blank"
+          >github.com/roryhofland</a
         >
       </p>
     </div>

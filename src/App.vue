@@ -11,7 +11,6 @@ import MainFooter from "./components/MainFooter.vue";
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/skills">Projects</RouterLink>
-        <RouterLink to="/about">About Me</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
