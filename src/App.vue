@@ -44,6 +44,12 @@ header {
   line-height: 1.5;
   max-height: 100vh;
   width: 100%;
+  justify-content: center;
+  padding: 0;
+}
+
+.wrapper {
+  justify-content: center;
 }
 .logo {
   display: block;
@@ -77,16 +83,14 @@ nav a:first-of-type {
 }
 
 h3 {
-  color: white;
-}
-.router-wrapper {
+  font-size: 36px;
+  visibility: hidden;
 }
 
 @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   header .wrapper {
@@ -96,10 +100,7 @@ h3 {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
   }
 }

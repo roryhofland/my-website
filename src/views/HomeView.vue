@@ -9,7 +9,12 @@
         Hey! My name is Rory Hofland, I am an undergraduate student at the
         University of Toronto, and I am working my way towards a double major in
         Mathematics and Computer Science. Currently, I'm completing a 16-month
-        co-op term at Environment and Climate Change Canada.
+        co-op term at
+        <a
+          href="https://www.canada.ca/en/environment-climate-change.html"
+          target="_blank"
+          >Environment and Climate Change Canada</a
+        >.
       </div>
     </div>
 
@@ -65,7 +70,7 @@ i {
   place-content: center;
   width: 32px;
   height: 32px;
-
+  margin-top: 10px;
   color: var(--color-text);
 }
 
@@ -77,6 +82,10 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  main {
+    padding: 0 2rem 0 2rem;
+  }
+
   .item {
     margin-top: 0;
     padding: 0.4rem 0 1rem 3rem;
@@ -91,6 +100,7 @@ h3 {
     border-radius: 8px;
     width: 50px;
     height: 50px;
+    margin-top: 0;
   }
 
   .item:before {

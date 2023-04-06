@@ -38,7 +38,7 @@ import ProjectItem from "../components/ProjectItem.vue";
         <a
           class="proj-img"
           target="_blank"
-          href="https://github.com/ramp4-pcar4/ramp4-pcar4"
+          href="https://github.com/roryhofland/Routes"
           ><img class="thumbnail" src="../assets/images/boardgame.PNG" alt=""
         /></a>
       </template>
@@ -64,7 +64,7 @@ import ProjectItem from "../components/ProjectItem.vue";
         <a
           class="proj-img"
           target="_blank"
-          href="https://github.com/ramp4-pcar4/ramp4-pcar4"
+          href="https://github.com/ATM-GSA/ATM"
           ><img class="thumbnail" src="../assets/images/atm.svg" alt=""
         /></a>
       </template>
@@ -120,7 +120,7 @@ import ProjectItem from "../components/ProjectItem.vue";
 
 <style>
 i {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 
@@ -138,7 +138,6 @@ img {
 
 .list-wrapper {
   display: grid;
-  grid-template-columns: 50% 50%;
   max-height: 300px;
 }
 
@@ -148,5 +147,15 @@ img {
 
 .proj-img:hover {
   filter: none;
+}
+
+@media (min-width: 1024px) {
+  .list-wrapper {
+    grid-template-columns: 50% 50%;
+  }
+
+  i {
+    margin: 0;
+  }
 }
 </style>
