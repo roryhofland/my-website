@@ -17,11 +17,13 @@ import MainFooter from "./components/MainFooter.vue";
   </header>
 
   <div class="router-wrapper">
-    <RouterView v-slot="{ Component }">
-      <Transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </Transition>
-    </RouterView>
+    <div class="inner-wrapper">
+      <RouterView v-slot="{ Component }">
+        <Transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </Transition>
+      </RouterView>
+    </div>
   </div>
 
   <footer>
@@ -97,6 +99,15 @@ h3 {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .router-wrapper {
+    display: block;
+  }
+  .inner-wrapper {
+    margin: auto;
+    max-width: 1280px;
   }
 
   nav {

@@ -23,6 +23,7 @@
 .item {
   display: flex;
   width: 90%;
+  margin-top: 2rem;
 }
 
 ul,
@@ -47,6 +48,11 @@ i {
   height: 32px;
 
   color: var(--color-text);
+}
+
+i:hover {
+  border-color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
 }
 
 h3 {

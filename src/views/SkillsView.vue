@@ -17,6 +17,7 @@ import ProjectList from "../components/ProjectList.vue";
 <style>
 .intro {
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 1024px) {

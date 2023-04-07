@@ -138,7 +138,6 @@ img {
 
 .list-wrapper {
   display: grid;
-  max-height: 300px;
 }
 
 .proj-title {
