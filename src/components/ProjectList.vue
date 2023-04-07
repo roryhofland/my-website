@@ -83,10 +83,7 @@ import ProjectItem from "../components/ProjectItem.vue";
       </template>
       <template #stack>
         <img src="../assets/icons/icons8-c-sharp-logo.svg" alt="csharp" />
-        <img
-          src="../assets/icons/icons8-.net-or- dot-net -a-software-framework-developed-by-microsoft-24.png"
-          alt="dotnet"
-        />
+        <img src="../assets/icons/icons8-dotnet.png" alt="dotnet" />
         <img src="../assets/icons/blazor.svg" alt="blazor" />
       </template>
     </ProjectItem>
