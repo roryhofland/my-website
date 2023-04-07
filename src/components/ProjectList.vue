@@ -39,7 +39,7 @@ import ProjectItem from "../components/ProjectItem.vue";
           class="proj-img"
           target="_blank"
           href="https://github.com/roryhofland/Routes"
-          ><img class="thumbnail" src="../assets/images/boardgame.PNG" alt=""
+          ><img class="thumbnail" src="../assets/images/boardgame.png" alt=""
         /></a>
       </template>
       <template #heading>
