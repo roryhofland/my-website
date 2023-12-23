@@ -39,24 +39,26 @@ import ProjectItem from "../components/ProjectItem.vue";
           class="proj-img"
           target="_blank"
           href="https://github.com/roryhofland/Routes"
-          ><img class="thumbnail" src="../assets/images/boardgame.png" alt=""
+          ><img class="thumbnail" src="../assets/images/epoch.jpg" alt=""
         /></a>
       </template>
       <template #heading>
         <a
           class="proj-title"
           target="_blank"
-          href="https://github.com/roryhofland/Routes"
-          >Board Game Design</a
+          href="https://github.com/csc301-2023-fall/project-7-epoch-t"
+          >Epoch D&D Marketplace</a
         ></template
       >
       <template #description>
-        A school project to design efficient algorithms and associated data
-        structures to count the number of possible routes in a board game given
-        an arbitrary board configuration.
+        An open-source Vue widget library offering reusable cross-platform Vue
+        components for use by web developers of small to medium sized
+        businesses, with PostgreSQL back-end architecture.
       </template>
       <template #stack>
-        <img src="../assets/icons/icons8-python.svg" alt="python" />
+        <img src="../assets/icons/icons8-postgres.svg" alt="postgres" />
+        <img src="../assets/icons/icons8-javascript.svg" alt="javascript" />
+        <img src="../assets/icons/icons8-vue.svg" alt="vue" />
       </template>
     </ProjectItem>
     <ProjectItem>

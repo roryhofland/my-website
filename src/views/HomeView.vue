@@ -8,13 +8,8 @@
         <h3>About Me</h3>
         Hey! My name is <strong>Rory Hofland</strong>, I am an undergraduate
         student at the <strong>University of Toronto</strong>, and I am working
-        my way towards a double major in Mathematics and Computer Science.
-        Currently, I'm completing a 16-month co-op term at
-        <a
-          href="https://www.canada.ca/en/environment-climate-change.html"
-          target="_blank"
-          >Environment and Climate Change Canada</a
-        >.
+        my way towards a double major in Mathematics and Computer Science. My
+        expected graduation data is <strong>April 2024</strong>.
       </div>
     </div>
 
@@ -37,7 +32,7 @@
     <div class="item">
       <i class="fa fa-star"></i>
       <div class="details">
-        <h3>More Random Details</h3>
+        <h3>Other Stuff</h3>
         Other than my academic studies, I have a few hobbies that occupy the
         rest of my time. I love to read, and will devour anything science
         fiction or high fantasy. I am currently reading
