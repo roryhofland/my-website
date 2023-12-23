@@ -38,7 +38,7 @@ import ProjectItem from "../components/ProjectItem.vue";
         <a
           class="proj-img"
           target="_blank"
-          href="https://github.com/roryhofland/Routes"
+          href="https://github.com/csc301-2023-fall/project-7-epoch-t"
           ><img class="thumbnail" src="../assets/images/epoch.jpg" alt=""
         /></a>
       </template>
