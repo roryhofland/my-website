@@ -107,7 +107,7 @@ import ProjectItem from "../components/ProjectItem.vue";
         ></template
       >
       <template #description>
-        The the first iteration of this site, which was useful for learning web
+        An old personal website I made, which was useful for learning web
         development without frontend frameworks such as Vue.
       </template>
       <template #stack>

@@ -1,0 +1,28 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: npm build
+        run: |
+          npm install
+          npm run build
+      - name: sync s3
+        shell: bash
+        env:
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_s3_bucket: ${{ secrets.AWS_BUCKET_NAME_1 }}
+          aws_s3_region: ${{ secrets.AWS_REGION }}
+        run: |
+          sudo apt-get update && sudo apt-get -y install awscli
+          aws configure set aws_access_key_id $aws_key_id
+          aws configure set aws_secret_access_key $aws_secret_access_key 
+          aws configure set default.region $aws_s3_region
+          aws s3 sync dist/. s3://roryhofland.com --delete
+          aws s3 sync dist/. s3://www.roryhofland.com --delete
